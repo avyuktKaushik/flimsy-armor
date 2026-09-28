@@ -1,0 +1,37 @@
+# ---------------- FlimsyArmor config ----------------
+# Colors use & codes (e.g. &c = red, &l = bold).
+# Placeholder: {time} = duration / time remaining.
+
+# Used when you run /startflimsyarmor with no number.
+default-duration-minutes: 15
+
+# Upper limit for custom times, in minutes.
+max-duration-minutes: 180
+
+# Chat reminders when this many seconds are left.
+reminders-seconds: [300, 60, 30, 10]
+
+# Countdown bar shown at the top of every player's screen.
+bossbar:
+  enabled: true
+  color: RED        # PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  style: PROGRESS   # PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+  title: "&c&lFLIMSY ARMOR &7- &f{time} left"
+
+messages:
+  start:
+    - ""
+    - "&c&l⚠ FLIMSY ARMOR HAS BEGUN! ⚠"
+    - "&eEveryone's armor just went from &bUnbreaking III &eto &cNO Unbreaking &efor &f{time}&e!"
+    - "&7Watch your durability!"
+    - ""
+  end:
+    - ""
+    - "&a&lFlimsy Armor is over! &7Unbreaking works again."
+    - ""
+  stopped-early:
+    - "&aFlimsy Armor was stopped early. Unbreaking works again."
+  reminder: "&c[Flimsy Armor] &f{time} &7remaining."
+  already-running: "&cFlimsy Armor is already running! Use /stopflimsyarmor first."
+  not-running: "&cFlimsy Armor isn't running."
+  invalid-time: "&cUse a whole number of minutes between 1 and {max}. Example: /startflimsyarmor 20"

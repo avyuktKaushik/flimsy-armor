@@ -1,0 +1,18 @@
+name: FlimsyArmor
+version: 1.0.0
+main: com.flimsyarmor.FlimsyArmorPlugin
+api-version: '1.21.11'
+description: Temporarily removes the effect of Unbreaking on armor.
+commands:
+  startflimsyarmor:
+    description: Start the Flimsy Armor event
+    usage: /startflimsyarmor [minutes]
+    permission: flimsyarmor.admin
+  stopflimsyarmor:
+    description: Stop the Flimsy Armor event early
+    usage: /stopflimsyarmor
+    permission: flimsyarmor.admin
+permissions:
+  flimsyarmor.admin:
+    description: Start and stop the Flimsy Armor event
+    default: op
